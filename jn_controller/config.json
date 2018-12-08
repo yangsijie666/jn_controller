@@ -1,0 +1,52 @@
+{
+
+  "tfn2k":
+  {
+    "status":"off",
+    "args":
+    {
+      "time_last":60,
+      "attack_interval":8,
+      "wait_interval":2,
+      "phy_interface":
+      {
+        "name":"ens33",
+        "bandwidth":100
+      },
+      "packet_size":1399,
+      "flood_type":1,
+      "victims":["10.0.0.1", "10.0.0.2"]
+    }
+  },
+
+
+  "routetable":
+  {
+    "status":"off",
+    "args":
+    {
+      "time_last":60,
+      "time_interval":1
+    }
+  },
+
+
+  "packagecap":
+  {
+    "status":"off",
+    "args":
+    [
+      {
+        "interface":"lo",
+        "protocol":"",
+        "time_last":60
+      },
+      {
+        "interface":"ens33",
+        "protocol":"icmp",
+        "time_last":60
+      }
+    ]
+  }
+
+}
